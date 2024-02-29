@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom styles for the education page */
+        .education {
+            text-align: center;
+            padding: 50px;
+            background-color: #f9f9f9;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .event {
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .event .date {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .event h3 {
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .event p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ijjada Deepika</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="home-icon.png" alt="Home"> <span>Home</span></a></li>
+                <li><a href="about.html"><img src="about-icon.png" alt="About"> <span>About</span></a></li>
+                <li><a href="education.html"><img src="education-icon.png" alt="Education"> <span>Education</span></a></li>
+                <li><a href="projects.html"><img src="projects-icon.png" alt="Projects"> <span>Projects</span></a></li>
+                <li><a href="resume.html"><img src="resume-icon.png" alt="Resume"> <span>Resume</span></a></li>
+                <li><a href="skills.html"><img src="skills-icon.png" alt="Skills"> <span>Skills</span></a></li>
+                <li><a href="contact.html"><img src="contact-icon.png" alt="Contact"> <span>Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="content">
+        <!-- Content will be loaded dynamically here -->
+        <section class="education">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="event">
+                    <div class="date">2021 - present</div>
+                    <div class="description">
+                        <h3>Bachelor of Technology (B.Tech)</h3>
+                        <p>I'm currently pursuing a Bachelor of Technology degree in the stream of Electrical and Electronics Engineering at S.R.K.R Engineering College. My coursework includes subjects such as [Subject 1], [Subject 2], and [Subject 3].</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="date">2019 - 2021</div>
+                    <div class="description">
+                        <h3>Intermediate (10+2)</h3>
+                        <p>I pursued my intermediate education at Sri Chaitanya Junior College. During this time, I focused on subjects related to my future academic and career aspirations.</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="date">2018 - 2019</div>
+                    <div class="description">
+                        <h3>Secondary Education</h3>
+                        <p>I completed my secondary education at  Z.P.H.School,Kopalle. This period laid the foundation for my academic journey and instilled in me a love for learning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

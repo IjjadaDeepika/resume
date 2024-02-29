@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom styles for the projects page */
+        .projects {
+            text-align: center;
+            padding: 50px;
+            background-color: #f9f9f9;
+        }
+
+        .project {
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 auto 30px;
+            transition: transform 0.3s ease;
+            text-align: center; /* Center align content */
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .project img {
+            width: 200%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .project h3 {
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 10px;
+            cursor: pointer; /* Change cursor to indicate clickable */
+        }
+
+        .project p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            display: none; /* Hide project details by default */
+            text-align: left; /* Align details to the left */
+            margin-bottom: 20px; /* Add some spacing */
+        }
+
+        /* Custom styles for project details modal */
+        .modal-content {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center; /* Center align content */
+        }
+
+        .modal-content h2 {
+            font-size: 28px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .modal-content p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            color: #666;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ijjada Deepika</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="home-icon.png" alt="Home"> <span>Home</span></a></li>
+                <li><a href="about.html"><img src="about-icon.png" alt="About"> <span>About</span></a></li>
+                <li><a href="education.html"><img src="education-icon.png" alt="Education"> <span>Education</span></a></li>
+                <li><a href="projects.html"><img src="projects-icon.png" alt="Projects"> <span>Projects</span></a></li>
+                <li><a href="resume.html"><img src="resume-icon.png" alt="Resume"> <span>Resume</span></a></li>
+                <li><a href="skills.html"><img src="skills-icon.png" alt="Skills"> <span>Skills</span></a></li>
+                <li><a href="contact.html"><img src="contact-icon.png" alt="Contact"> <span>Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="content">
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3 onclick="toggleProjectDetails(1)">AI Powered Energy Management System</h3>
+                <p id="project1-details" style="display: none;"> AI-powered Energy Management System integrates data acquisition,data analytics,advanced machine learing algorithms and a user-friendly dashboard interface to provide a holistic solution for industrial and commercial energy management. Through sophisticated data acquisition mechanisms, our system collects real-time data from various sources within the facility, including energy meters, sensors, and IoT devices. This data is then processed and analyzed using advanced machine learning algorithms and data analytics techniques to generate actionable insights and optimization recommendations.
+
+The user-friendly dashboard interface serves as the central hub for facility managers to access and visualize critical energy data, trends, and performance metrics in an intuitive manner. This dashboard provides comprehensive visibility into energy consumption patterns, equipment performance, and operational efficiency metrics, enabling users to make informed decisions and take proactive measures to optimize energy usage and reduce costs.
+
+By seamlessly integrating data acquisition with a user-friendly dashboard interface, our Energy Management System empowers facility managers to effectively monitor, analyze, and control energy usage with unprecedented precision and efficiency. This holistic approach ensures that users have the tools and insights they need to drive operational efficiency, reduce environmental impact, and achieve substantial cost savings, ultimately ushering in a sustainable and efficient future for industrial and commercial facilities.
+
+
+
+
+</p>
+                <img src="AIEMS.jpg" alt="AI EMS">
+            </div>
+            <div class="project">
+                <h3 onclick="toggleProjectDetails(2)">Bluetooth-Controlled Robotic Arms(BlueArmBot)</h3>
+                <p id="project2-details" style="display: none;">"BlueArmBot" is a sophisticated humanoid robot project featuring articulate robotic arms that can be wirelessly controlled via Bluetooth technology. The project combines hardware and software elements, including servo motors, an Arduino Mega microcontroller, and a Bluetooth module for communication. The robot is programmed to respond to voice commands transmitted via a custom-designed Bluetooth voice-controlled app, allowing users to interact with the robot seamlessly. Commands such as "hello," "shake hand," "hands up," and "hands down" trigger corresponding movements in the robot's arms, accompanied by audio feedback through a connected speaker. The project aims to demonstrate the integration of robotics, wireless communication, and voice recognition technologies in a fun and interactive manner, showcasing the potential of modern automation systems in human-machine interaction.</p>
+                
+            </div>
+            <div class="project">
+                <h3 onclick="toggleProjectDetails(3)">Personal Portfolio Website</h3>
+                <p id="project3-details" style="display: none;">This portfolio website serves as a comprehensive showcase of my professional profile, projects, skills, and accomplishments. Designed with a clean and intuitive interface, it provides visitors with easy access to information about my background, education, and work experience. The website features dedicated sections for projects, allowing users to explore detailed descriptions and view associated images. Additionally, it highlights my skills and expertise, providing a glimpse into my technical abilities and competencies. With a responsive layout, the website ensures optimal viewing across various devices, enhancing accessibility for potential employers and collaborators. Overall, this portfolio website serves as a dynamic representation of my capabilities and serves as a valuable tool for networking and career advancement.
+
+
+
+
+</p>
+               
+            </div>
+            <!-- Add more project items as needed -->
+        </section>
+    </div>
+
+    <div id="project-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideProjectDetails()">&times;</span>
+
+            <div id="modal-project-details">
+                <!-- Project details will be loaded dynamically here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleProjectDetails(projectId) {
+            var projectDetails = document.getElementById("project" + projectId + "-details");
+            if (projectDetails.style.display === "none") {
+                projectDetails.style.display = "block";
+            } else {
+                projectDetails.style.display = "none";
+            }
+        }
+
+        function hideProjectDetails() {
+            var modal = document.getElementById("project-details-modal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
